@@ -10,10 +10,8 @@ func (que *Queue) push(i int) {
 	*que = append(*que, i)
 }
 
-func (que *Queue) pop() int {
-	res := (*que)[0]
+func (que *Queue) pop() {
 	*que = (*que)[1:]
-	return res
 }
 
 func (que *Queue) front() int {

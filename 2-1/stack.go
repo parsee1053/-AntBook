@@ -10,10 +10,8 @@ func (st *Stack) push(i int) {
 	*st = append(*st, i)
 }
 
-func (st *Stack) pop() int {
-	res := (*st)[len(*st)-1]
+func (st *Stack) pop() {
 	*st = (*st)[:len(*st)-1]
-	return res
 }
 
 func (st *Stack) top() int {
